@@ -1,8 +1,12 @@
 /*
-*This program runs all sorts of operations. First the addition of two integers.
-* Second the concatenation of two strings. Third calculating the product
-* of two ints and printing the value. Finally, it shows the different ways of
-* incrementing and decrementing the variable z.
+*This program runs all sorts of operations.
+* First the addition of two integers.
+* Second the concatenation of two strings.
+* Third calculating the product of two ints and printing the value.
+* Fourth, it shows the different ways of incrementing and decrementing
+* the variable z.
+* Fifth, it runs a regular division operation.
+* Sixth, it runs a truncating division operation.
 */
 
 void main() {
@@ -32,4 +36,16 @@ void main() {
   print(z++);
   //Prints the variable 'z' and then decrements by 1.
   print(z--);
+
+  //Same as x = x + 2.
+  x += 2;
+
+  //num can hold int or double.
+  num q = 5;
+  //Same as q = q / 2.
+  q /= 2;
+  print(q);
+
+  //Truncating division, where any fraction is removed.
+  print(7 ~/ 3);
 }
