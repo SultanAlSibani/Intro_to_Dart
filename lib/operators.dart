@@ -32,4 +32,5 @@ void main() {
   print(z++);
   //Prints the variable 'z' and then decrements by 1.
   print(z--);
+  //Update
 }
