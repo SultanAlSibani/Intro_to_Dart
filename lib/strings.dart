@@ -1,6 +1,8 @@
 /*
 * This program makes use of backslash to escape some special characters.
 * '$' is used for string interpolation.
+* The program uses the index operator '[]' to access individual characters
+* within a string variable.
 * The program uses .length for a string variable to return the number of
 * characters in the variable.
 */
