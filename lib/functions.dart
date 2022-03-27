@@ -1,36 +1,47 @@
 void main() {
-  /*If no input parameters are given, then the function runs with default
-   *parameters.
-   */
-
   //Function call with no parameters.
-  myFunction();
+  myFunction1();
 
   //Function call with 1 parameter.
-  myFunction("Omar");
+  myFunction1("Omar");
 
   //Function call with 2 parameters.
-  myFunction("Musa", 12);
+  myFunction1("Musa", 12);
 
   //Function call with 3 parameters.
-  myFunction("Muna", 17, "female");
-  myFunction("Sultan", 24, "MaLe");
-  myFunction("Sundus", 124, "feMaLe");
+  myFunction1("Muna", 17, "female");
+  myFunction1("Sultan", 24, "MaLe");
+  myFunction1("Sundus", 124, "feMaLe");
+
+  myFunction2("Ahmed", 12);
+  myFunction2("Moza", 67, true);
+
+  myFunction3();
+  myFunction3(hidden: true);
+
+  myFunction4("Bob", 54, retired: true);
 }
 
-/*Optional functions are denoted by brackets. To set default values one must
- *initialise the parameters.
+/*
+ *If no input parameters are given, then the function runs with default
+ *parameters.
+ *Optional parameters are denoted by brackets. One must initialise the
+ *parameters to set default values.
  */
-void myFunction([String name = "Ahmed", int age = 23, String gender = "Male"]) {
-  /*
-  *Checks if age is 18 or more, checks the gender and then prints an appropriate
-  * message.
-  *
-  */
+void myFunction1(
+    [String name = "Ahmed", int age = 23, String gender = "Male"]) {
+  /*Checks if age is beyond the normal range, if so then it prints an error
+   *message.
+   */
   if ((age <= 0 && age > 115) &&
       (gender.toLowerCase() == "male" || gender.toLowerCase() == "female")) {
     print("Invalid age entry");
-  } else if (age >= 18 && gender.toLowerCase() == "male") {
+  }
+  /*
+  *Checks if age is 18 or more, checks the gender whether 'male' or 'female'
+  * and then prints an appropriate message.
+  */
+  else if (age >= 18 && gender.toLowerCase() == "male") {
     print("$name is $age years old. He is an adult.");
   } else if (age >= 18 && gender.toLowerCase() == "female") {
     print("$name is $age years old. She is an adult.");
@@ -39,4 +50,30 @@ void myFunction([String name = "Ahmed", int age = 23, String gender = "Male"]) {
   } else {
     print("$name is $age years old. She is not an adult.");
   }
+}
+
+/*This function has both required and optional parameters. However,
+ *optional parameters have to be at the end of the list of parameters.
+ */
+void myFunction2(String name, int age, [bool retired = false]) {
+  print("Name: $name");
+  print("Age: $age");
+  print("Retired? $retired");
+}
+
+/*Named optional parameters are denoted curly braces. The parameters must be
+ *initialized. The order is not that important.
+ */
+void myFunction3({bool bold = false, bool hidden = false}) {
+  print("Bold: $bold");
+  print("Hidden: $hidden");
+}
+
+/*This function has both required and named optional parameters. However,
+ *named optional parameters have to be at the end of the list of parameters.
+ */
+void myFunction4(String name, int age, {bool retired = false}) {
+  print("Name: $name");
+  print("Age: $age");
+  print("Retired? $retired");
 }
