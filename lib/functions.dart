@@ -1,3 +1,9 @@
+/*
+* This programs runs multiple functions. First it runs functions with different
+* number of parameters. Then it runs functions that contain required, optional,
+* or named optional parameters, or a mix of required and optional parameters.
+*/
+
 void main() {
   //Function call with no parameters.
   myFunction1();
@@ -13,12 +19,15 @@ void main() {
   myFunction1("Sultan", 24, "MaLe");
   myFunction1("Sundus", 124, "feMaLe");
 
+  //Function call with optional parameters.
   myFunction2("Ahmed", 12);
   myFunction2("Moza", 67, true);
 
   myFunction3();
+  //Function call with a named optional parameter.
   myFunction3(hidden: true);
 
+  //Function call wtih both required and named optional parameters.
   myFunction4("Bob", 54, retired: true);
 }
 
