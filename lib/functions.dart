@@ -2,6 +2,7 @@
 * This programs runs multiple functions. First it runs functions with different
 * number of parameters. Then it runs functions that contain required, optional,
 * or named optional parameters, or a mix of required and optional parameters.
+* Lastly it runs a function that returns the sum of two integers.
 */
 
 void main() {
