@@ -29,6 +29,9 @@ void main() {
 
   //Function call wtih both required and named optional parameters.
   myFunction4("Bob", 54, retired: true);
+
+  int sum_of_two = sum(26, 7);
+  print(sum_of_two);
 }
 
 /*
@@ -86,3 +89,6 @@ void myFunction4(String name, int age, {bool retired = false}) {
   print("Age: $age");
   print("Retired? $retired");
 }
+
+//Function that returns the sum of two values.
+int sum(int a, int b) => a + b;
