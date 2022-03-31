@@ -26,7 +26,6 @@ void main() {
   print(objects.isEmpty);
   //Checks if the list is not empty and returns a boolean value.
   print(numbers.isNotEmpty);
-
   //endregion
 
   //region 4. List length.
@@ -39,6 +38,73 @@ void main() {
 
   //Prints the sum of values of an integer list.
   print(sum([2, 3, 4]));
+  //endregion
+
+  //region 6. Add to or remove from a list.
+
+  //Create new list of string variables.
+  List<String> students = ["Sabrina", "Mike"];
+
+  //Add individual string variable to list.
+  students.add("Salma");
+  students.add("John");
+  print(students);
+
+  //Remove a specific string variable from list.
+  students.remove("Sabrina");
+  print(students);
+
+  //Remove an element at a specific position from a list.
+  students.removeAt(0);
+  print(students);
+
+  //Remove the last element from a list.
+  students.removeLast();
+  print(students);
+  //endregion
+
+  //region 7. Sorting a list.
+
+  //Initializing a list with integers.
+  List<int> unsortedNumbers = [4, 7, 3, 6, 1];
+
+  //Creating an empty list;
+  List<int> sortedNumbers = [];
+
+  //Adding all values from one list to another.
+  sortedNumbers.addAll(unsortedNumbers);
+
+  //Function to sort the list
+  sortedNumbers.sort();
+  print("Unsorted numbers: $unsortedNumbers");
+  print("Sorted numbers: $sortedNumbers");
+  //endregion
+
+  //region 8. Accessing values in a list.
+
+  //Initializing a list with string variables.
+  List<String> employees = ["Abdullah", "Sam", "Omar", "Sundus", "Fatma"];
+  //Printing the element at a specific index of a list.
+  print(employees[0]);
+  print(employees[3]);
+  print(employees[1]);
+
+  //Printing the first element of a list.
+  print(employees.first);
+
+  //Printing the last element of a list.
+  print(employees.last);
+  //endregion
+
+  //region 9. Another way to loop through a list.
+
+  //Initialising a list with doubles.
+  List<double> temperatureValues = [27.4, 25, 44.3, 39.1];
+
+  //For-in loop
+  for (double degree in temperatureValues) {
+    print(degree);
+  }
   //endregion
 }
 
