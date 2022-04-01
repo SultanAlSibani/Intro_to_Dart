@@ -1,3 +1,16 @@
+/*
+* This program does the following:
+* 1. Creates lists.
+* 2. Calculates the sum of all the values in a list.
+* 3. Checks if a list is empty or not.
+* 4. Computes the size of a list.
+* 5. Uses a function to calculate the of only an integer list.
+* 6. Adds and removes elements from a list.
+* 7. Sorts a list.
+* 8. Accesses specific values in a list.
+* 9. Provides another way to loop through a list.
+* */
+
 void main() {
   //region 1. List creation.
 
