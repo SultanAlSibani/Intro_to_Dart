@@ -29,28 +29,28 @@ void main() {
   for (int i = 0; i < numbers.length; i++) {
     total += numbers[i];
   }
-  print("Total: $total");
+  print("1. Total: $total");
   //endregion
 
   //region 3. Empty or not?
 
   //Checks if the list is empty and returns a boolean value.
-  print(myOtherList.isEmpty);
-  print(objects.isEmpty);
+  print("2. ${myOtherList.isEmpty}");
+  print("3. ${objects.isEmpty}");
   //Checks if the list is not empty and returns a boolean value.
-  print(numbers.isNotEmpty);
+  print("4. ${numbers.isNotEmpty}");
   //endregion
 
   //region 4. List length.
 
   //Prints the size of the list.
-  print(numbers.length);
+  print("5. ${numbers.length}");
   //endregion
 
   //region 5. Int specific sum function.
 
   //Prints the sum of values of an integer list.
-  print(sum([2, 3, 4]));
+  print("6. ${sum([2, 3, 4])}");
   //endregion
 
   //region 6. Add to or remove from a list.
@@ -61,19 +61,32 @@ void main() {
   //Add individual string variable to list.
   students.add("Salma");
   students.add("John");
-  print(students);
+  students.add("Jacob");
+  print("7. $students");
+
+  //Replace elements at specific position.
+  students[3] = "Omar";
+  print("8. $students");
+
+  //Insert element at specific position.
+  students.insert(1, "Ahmed");
+  print("9. $students");
 
   //Remove a specific string variable from list.
   students.remove("Sabrina");
-  print(students);
+  print("10. $students");
 
   //Remove an element at a specific position from a list.
   students.removeAt(0);
-  print(students);
+  print("11. $students");
 
   //Remove the last element from a list.
   students.removeLast();
-  print(students);
+  print("12. $students");
+
+  //Clear the whole list.
+  students.clear();
+  print("13. $students");
   //endregion
 
   //region 7. Sorting a list.
@@ -89,8 +102,8 @@ void main() {
 
   //Function to sort the list
   sortedNumbers.sort();
-  print("Unsorted numbers: $unsortedNumbers");
-  print("Sorted numbers: $sortedNumbers");
+  print("14. Unsorted numbers: $unsortedNumbers");
+  print("15. Sorted numbers: $sortedNumbers");
   //endregion
 
   //region 8. Accessing values in a list.
@@ -98,15 +111,21 @@ void main() {
   //Initializing a list with string variables.
   List<String> employees = ["Abdullah", "Sam", "Omar", "Sundus", "Fatma"];
   //Printing the element at a specific index of a list.
-  print(employees[0]);
-  print(employees[3]);
-  print(employees[1]);
+  print("16. ${employees[0]}");
+  print("17. ${employees[3]}");
+  print("18. ${employees[1]}");
 
   //Printing the first element of a list.
-  print(employees.first);
+  print("19. ${employees.first}");
 
   //Printing the last element of a list.
-  print(employees.last);
+  print("20. ${employees.last}");
+
+  //Does it contain a value.
+  print("21. ${employees.contains("Sundus")}");
+
+  //Index of a specific element.
+  print("22. ${employees.indexOf("Sam")}");
   //endregion
 
   //region 9. Another way to loop through a list.
@@ -116,7 +135,7 @@ void main() {
 
   //For-in loop
   for (double degree in temperatureValues) {
-    print(degree);
+    print("23. $degree");
   }
   //endregion
 }
