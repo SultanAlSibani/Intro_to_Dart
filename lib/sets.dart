@@ -1,3 +1,10 @@
+/*
+* This program does the following:
+* 1. Creates sets.
+* 2. Prints the size of a set.
+* 3. Accesses specific values of a set.
+* 4. Modifies a set.
+* 5. Performs the union, intersection and difference operations of a set.*/
 void main() {
   //region 1. Set creation.
 

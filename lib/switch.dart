@@ -1,10 +1,10 @@
 /*
-*This program runs a switch statement for a string variable and printing
+*This program runs a switch statement for a string variable and prints
 * the appropriate code block for the matching case.
 */
 
 void main() {
-  //Assigning a string to the variable 'name'.
+  //Assigns a string to the variable 'name'.
   String name = "Sultan";
 
   switch (name) {
@@ -21,16 +21,16 @@ void main() {
       print("Unknown age");
   }
 
-  //Initializing the variable 'score'.
+  //Initializes the variable 'score' with an integer.
   num score = 110;
   String grade;
 
-  //Checking if score is more than 100.
+  //Checks if score is more than 100.
   if (score > 100) {
-    //Assigning an error statement to grade.
+    //Assigns an error statement to grade.
     grade = "Invalid grade";
   }
-  /*Checking if score is between 0 to 100 and assigning the appropriate
+  /*Checks if score is between 0 to 100 and assigning the appropriate
    *grade letter.
    */
   else if (score >= 90) {
@@ -44,12 +44,12 @@ void main() {
   } else if (score >= 0) {
     grade = "F";
   }
-  //Checking if score is less than 0.
+  //Checks if score is less than 0.
   else {
-    //Assigning error message to grade.
+    //Assigns error message to grade.
     grade = "Invalid grade";
   }
-  //Printing appropriate description for each letter grade.
+  //Prints appropriate description for each letter grade.
   switch (grade) {
     case "A":
       print("Excellent");
